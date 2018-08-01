@@ -1,6 +1,7 @@
 /* colors */
 /* main variables */
 /* Grid */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,600,700,900");
 *, *:before, *:after { box-sizing: inherit; margin: 0px; padding: 0px; }
 
 html { height: 100%; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
@@ -21,7 +22,7 @@ table { border-collapse: collapse; border-width: 0px; }
 
 ul { list-style: none; }
 
-input, textarea { color: #333; font-family: "Poppins", sans-serif; outline: none; border-radius: 0; -webkit-appearance: none; }
+input, textarea { color: #333; font-family: "Lato", sans-serif; outline: none; border-radius: 0; -webkit-appearance: none; }
 
 input[type="button"], input[type="submit"], button { cursor: pointer; }
 
@@ -30,12 +31,6 @@ a { color: #000; -webkit-transition: all 0.2s linear; transition: all 0.2s linea
 a, span, div, button { outline: none !important; }
 
 input[type=submit], input[type=button], button { -webkit-appearance: none; outline: none; }
-
-@font-face { font-family: 'Open Sans'; src: url("../fonts/Open Sans Light.eot"); src: url("../fonts/Open Sans Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans Light.woff") format("woff"), url("../fonts/Open Sans Light.ttf") format("truetype"), url("../fonts/Open Sans Light.svg#Open Sans Light") format("svg"); font-weight: 300; font-style: normal; font-stretch: normal; unicode-range: U+0020-FFFD; }
-
-@font-face { font-family: 'Open Sans'; src: url("../fonts/Open Sans Bold.eot"); src: url("../fonts/Open Sans Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans Bold.woff") format("woff"), url("../fonts/Open Sans Bold.ttf") format("truetype"), url("../fonts/Open Sans Bold.svg#Open Sans Bold") format("svg"); font-weight: 700; font-style: normal; font-stretch: normal; unicode-range: U+0020-FFFD; }
-
-@font-face { font-family: 'Open Sans'; src: url("../fonts/Open Sans.eot"); src: url("../fonts/Open Sans.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans.woff") format("woff"), url("../fonts/Open Sans.ttf") format("truetype"), url("../fonts/Open Sans.svg#Open Sans") format("svg"); font-weight: 400; font-style: normal; font-stretch: normal; unicode-range: U+0020-FFFD; }
 
 .row { margin-bottom: 2rem; }
 
@@ -77,11 +72,9 @@ input[type=submit], input[type=button], button { -webkit-appearance: none; outli
 
 .row .col-5-of-6 { width: -webkit-calc( (((100% - 2rem * 5) / 6) * 5) + 8rem); width: calc( (((100% - 2rem * 5) / 6) * 5) + 8rem); }
 
-html, body { height: 100%; }
-
 html { font-size: 62.5%; }
 
-body { color: #000; font-family: "Poppins", sans-serif; font-size: 1.6rem; line-height: 1.7rem; box-sizing: border-box; }
+body { color: #000; font-family: "Lato", sans-serif; font-size: 1.8rem; line-height: 1.7rem; box-sizing: border-box; }
 
 button, select, label[for], input[type='submit'], input[type='image'] { color: inherit; cursor: pointer; outline: none !important; }
 
@@ -118,6 +111,8 @@ img { height: auto; max-width: 100%; }
 
 .clearfix:after { content: ""; display: table; clear: both; }
 
+.bg-light { background: rgba(28, 110, 92, 0.05); }
+
 @-webkit-keyframes scroll { 0% { -webkit-transform: translate(0, 0);
     transform: translate(0, 0); }
   100% { -webkit-transform: translate(-100%, 0);
@@ -126,22 +121,22 @@ img { height: auto; max-width: 100%; }
 @keyframes scroll { 0% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
   100% { -webkit-transform: translate(-100%, 0); transform: translate(-100%, 0); } }
 
-header { background: #f0f0f0; height: 75rem; min-width: 320px; -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; width: 100%; }
+header { background: #1C6E5C; height: 7rem; min-width: 320px; -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; width: 100%; }
 
-footer { background: #000; height: 8rem; min-width: 320px; -webkit-box-ordinal-group: 4; -webkit-order: 3; -ms-flex-order: 3; order: 3; width: 100%; }
+footer { background: #1C6E5C; height: 7rem; min-width: 320px; -webkit-box-ordinal-group: 4; -webkit-order: 3; -ms-flex-order: 3; order: 3; width: 100%; }
 
 .main-wrapper { padding: 0 0 0 0; min-width: 320px; width: 100%; position: relative; overflow: hidden; min-height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
 
-.wrapper { min-width: 320px; max-width: 1230px; padding: 0 2rem; margin: 0 auto; position: relative; }
+.wrapper { min-width: 320px; max-width: 1080px; padding: 0 2rem; margin: 0 auto; position: relative; }
 
 /* titles */
-p { font-size: 1.6rem; line-height: 1.8rem; color: #696969; padding: 1.5rem 0; font-weight: 400; }
+p { font-size: 1.8rem; line-height: 2.7rem; color: #000; padding: 1.5rem 0; font-weight: 400; }
 
-h1 { font-size: 6rem; line-height: 8rem; color: #2d2d43; font-family: "Poppins", sans-serif; padding: 1.5rem 0; font-weight: 400; }
+h1 { font-size: 5rem; line-height: 6rem; color: #000; font-family: "Lato", sans-serif; padding: 1.5rem 0; font-weight: 400; }
 
-h2 { font-size: 3.6rem; line-height: 4.8rem; color: #2d2d43; font-family: "Poppins", sans-serif; padding: 1.5rem 0; font-weight: 400; }
+h2 { font-size: 3.6rem; line-height: 4.4rem; color: #000; font-family: "Lato", sans-serif; padding: 1.5rem 0; font-weight: 400; }
 
-h3 { font-size: 2.4rem; line-height: 6rem; color: #2d2d43; font-family: "Poppins", sans-serif; padding: 1.5rem 0; font-weight: 400; }
+h3 { font-size: 2.4rem; line-height: 2.9rem; color: #000; font-family: "Lato", sans-serif; padding: 1.5rem 0; font-weight: 400; }
 
 /* text position */
 .text-left { text-align: left !important; }
@@ -164,7 +159,7 @@ h3 { font-size: 2.4rem; line-height: 6rem; color: #2d2d43; font-family: "Poppins
 |                                     CONTENT                                 |
 ================================================================================
 */
-.content { background: #fff000; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; min-width: 320px; -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; text-align: left; width: 100%; }
+.content { background: #fff; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; min-width: 320px; -webkit-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; text-align: left; width: 100%; }
 
 .truncate { display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; vertical-align: top; white-space: nowrap; width: 100%; }
 

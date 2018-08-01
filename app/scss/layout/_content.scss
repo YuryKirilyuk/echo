@@ -70,12 +70,12 @@ h3{
 ================================================================================
 */
 .content{	
-	background: #fff000;
+	background: $base-bg;
 	flex-grow: 1;
 	min-width: $min-width;
 	order: 2;
 	text-align:left;
-  width: 100%;
+  	width: 100%;
 }
 
 

@@ -2,11 +2,10 @@
 
 $white: #fff;
 $black: #000;
-$dark: #2d2d43;
-$blue: #4451fc;
-$grey: #656770;
+$green: #1C6E5C;
+$grey: #ccc;
 $grey-dark: #404250;
-$grey-light: #ccc;
+$grey-light: rgba(28,110,92,.05);
 
 $main-color: $black;
 $link-color: $main-color;
@@ -14,31 +13,34 @@ $link-color: $main-color;
 /* main variables */
 
 $min-width: 320px;
-$max-width: 1230px;
+$max-width: 1080px;
 $base-bg: $white;
-$base-font-size: 1.6rem;
-$base-line-height: 1.8rem;
-$base-font-family: 'Poppins', sans-serif;
-$custom-font-family: 'Lato', sans-serif;
+$base-font-size: 1.8rem;
+$base-line-height: 2.7rem;
+$base-font-family: 'Lato', sans-serif;
 
 //text, titles
-$text-color: #696969;
-$title-color: $dark;
+$text-color: $black;
+$title-color: $black;
 $title-font-family: $base-font-family;
 $title-font-weight: 600;
 
-$font-size-h1: 6rem;
-$line-height-h1: 8rem;
+$font-size-h1: 5rem;
+$line-height-h1: 6rem;
+
 $font-size-h2: 3.6rem;
-$line-height-h2: 4.8rem;
+$line-height-h2: 4.4rem;
+
 $font-size-h3: 2.4rem;
-$line-height-h3: 6rem;
+$line-height-h3: 2.9rem;
+
 $font-size-h4: 1.6rem;
 $line-height-h4: 6rem;
 
-$headerTopHeight: 11rem;
+
+$headerTopHeight: 7rem;
 $headerHeight: 75rem;
-$footerHeight: 8rem;
+$footerHeight: 7rem;
 
 $default-transition: all .2s linear;
 
