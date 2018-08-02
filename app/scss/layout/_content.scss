@@ -10,7 +10,6 @@
 	justify-content:flex-start;
 }
 .wrapper{
-	min-width: $min-width;
 	max-width: $max-width;
 	padding: 0;
 	margin: 0 auto;
@@ -44,6 +43,9 @@ h3{
 
 section {
 	padding: 6.5rem 1.5rem 0;
+	@media screen and (max-width: 425px) {
+		padding: 4rem 1.5rem 0;
+	}
 }
 
 /* text position */
