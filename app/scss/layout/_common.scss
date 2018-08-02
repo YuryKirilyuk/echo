@@ -3,7 +3,7 @@ body {
 	color: $main-color;
 	font-family: $base-font-family;
 	font-size: $base-font-size;
-	line-height: 1.7rem;
+	line-height: $base-line-height;
 	box-sizing: border-box;
 }
 
@@ -62,4 +62,12 @@ img {
 }
 .bg-light {
 	background: $grey-light;
+}
+.flex {display: flex;}
+.section-link {
+	color: $green;
+	font-size: 1.6rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	&:hover {color: #000;}
 }

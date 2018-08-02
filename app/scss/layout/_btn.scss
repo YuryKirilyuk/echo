@@ -1,3 +1,16 @@
 .btn {
-	
+  @include hover($green);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 45px;
+  padding: 0 3.5rem;
+  text-transform: uppercase;
+  &-border {
+    border: 2px solid #fff;
+  }
 }

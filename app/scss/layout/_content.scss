@@ -1,7 +1,7 @@
 .main-wrapper{
-	padding: 0 0 0 0;
+	padding: $headerTopHeight 0 0;
 	min-width: $min-width;
-  width: 100%;
+	width: 100%;
 	position: relative;
 	overflow: hidden;
 	min-height:100%;
@@ -12,7 +12,7 @@
 .wrapper{
 	min-width: $min-width;
 	max-width: $max-width;
-	padding: 0 2rem;
+	padding: 0;
 	margin: 0 auto;
 	position: relative;
 }
@@ -21,25 +21,29 @@
 p{	
 	@include font($base-font-size,$base-line-height,$text-color);
 	padding: 1.5rem 0;
-	font-weight: 400;	
+	font-weight: 400;
 }
 h1{	
 	@include font($font-size-h1,$line-height-h1,$title-color);
 	font-family: $title-font-family;
-	padding: 1.5rem 0;
-	font-weight: 400;	
+	padding: 0;
+	font-weight: 600;
 }
 h2{
 	@include font($font-size-h2,$line-height-h2,$title-color);
 	font-family: $title-font-family;
-	padding: 1.5rem 0;
-	font-weight: 400;	
+	padding: 1.5rem 0 5rem;
+	font-weight: 600;
 }
 h3{
 	@include font($font-size-h3,$line-height-h3,$title-color);
 	font-family: $title-font-family;
 	padding: 1.5rem 0;
-	font-weight: 400;
+	font-weight: 600;
+}
+
+section {
+	padding: 6.5rem 0 0;
 }
 
 /* text position */
@@ -78,6 +82,90 @@ h3{
   	width: 100%;
 }
 
+.hero-section {
+	max-height: 480px;
+	padding: 0;
+	position: relative;
+	.hero-image {
+		max-height: 100%;
+		position: relative;
+		&:after {
+			background: linear-gradient(180deg, rgba(28,110,92,0) 0%, $green 100%);
+			content: '';
+			height: 52%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+	.main-title {
+		bottom: 16.6666%;
+		color: #fff;
+		left: 0;
+		letter-spacing: 1.8px;
+		margin: auto;
+		max-width: 81.5rem;
+		padding: 0;
+		right: 0;
+		position: absolute;
+	}
+}//.hero-section
 
 
+.mission-section {
+	.section-content {
+		align-items: flex-start;
+		display: flex;
+		justify-content: space-between;
+	}
+	.col-1-of-2 {
+		width: 48.6%;
+	}
+}
 
+
+.service-section {
+	.section-header {
+		align-items: baseline;
+		display: flex;
+		justify-content: space-between;
+	}
+	.section-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.service-item {
+		margin-bottom: 3rem;
+		height: 250px;
+		position: relative;
+		width: 340px;
+		.service-title {
+			a {
+				background: linear-gradient(180deg, $grey-light 0%, $green 100%);
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				display: flex;
+				color: #fff;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+				&:hover {
+					background: linear-gradient(180deg, darken($grey-light, 10%) 0%, darken($green, 20%) 100%);
+				}
+			}
+		}//.service-title
+	}//.service-item
+}//.service-section
+
+.gallery-section {
+	.section-header {
+		align-items: baseline;
+		display: flex;
+		justify-content: space-between;
+	}
+}//.gallery-section

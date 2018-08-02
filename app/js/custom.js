@@ -18,7 +18,18 @@ function viewport(){
 	return { width : e[ a+'Width' ] , height : e[ a+'Height' ] }
 };
 /* viewport width */
+
+
 $(function(){
+
+    $('a[href^="#"]').click(function(){
+        var target = $(this).attr('href');
+        //$(this).parent().addClass('active').siblings().removeClass('active');
+        $('html, body').animate({scrollTop: $(target).offset().top - 70}, 300);
+        $('#navToggle').prop('checked', false);
+        return false;
+    });
+
 	/* placeholder*/	   
 	$('input, textarea').each(function(){
  		var placeholder = $(this).attr('placeholder');

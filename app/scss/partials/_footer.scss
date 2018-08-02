@@ -1,8 +1,23 @@
 footer{
 	background: $green;
-	height: $footerHeight; 
 	min-width: $min-width;
 	order: 3;	
 	width: 100%;
+	.footer-lower {
+		align-items: center;
+		color: rgba(255,255,255,.6);
+		display: flex;
+		justify-content: center;
+		height: $footerHeight;
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+		a {
+			padding: 0 5px;
+			&:hover {
+				color: #fff;
+				text-decoration: underline
+			}
+		}
+	}//.footer-lower
 }
 
