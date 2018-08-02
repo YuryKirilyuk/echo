@@ -1,13 +1,12 @@
 @import 'utils/variables';
 @import 'utils/mixins';
+@import 'utils/placeholders';
 
 @import "base/reset";
 @import "base/fonts";
 
 //@import "vendor/jquery.formstyler";
 @import "vendor/fancybox";
-//@import "vendor/slick";
-//@import "vendor/mCustomScrollbar";
 
 @import "layout/grid";
 @import "layout/common";

@@ -17,12 +17,7 @@
 }
 
 /* titles */
-p{	
-	@include font($base-font-size,$base-line-height,$text-color);
-	padding: 1.5rem 0;
-	font-weight: 400;
-}
-h1{	
+h1{
 	@include font($font-size-h1,$line-height-h1,$title-color);
 	font-family: $title-font-family;
 	padding: 0;
@@ -69,12 +64,7 @@ section {
 }
 .loaded .icon-load{display:block;}
 
-
-/*
-================================================================================
-|                                     CONTENT                                 |
-================================================================================
-*/
+.mt20 {margin-top: 2rem;}
 .content{	
 	background: $base-bg;
 	flex-grow: 1;

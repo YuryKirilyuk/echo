@@ -1,8 +1,146 @@
 footer{
 	background: $green;
+	color: #fff;
 	min-width: $min-width;
-	order: 3;	
+	order: 3;
+	padding: 5rem 1.5rem 0;
 	width: 100%;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		@media screen and (max-width: 768px) {
+			justify-content: space-evenly;
+		}
+	}
+
+
+	.footer-menu {
+		color: #fff;
+		line-height: 2.2rem;
+		margin-bottom: 5rem;
+		li {
+			//margin-bottom: 1rem;
+		}
+		a {
+			@extend %link-hover;
+			padding: 9px 0;
+		}
+	}//.footer-menu
+
+
+
+
+	.social-links {
+		color: #fff;
+		letter-spacing: 1px;
+		&-title {
+			color: rgba(255,255,255,.6);
+			margin-bottom: 1.5rem;
+		}
+		a {
+			@extend %link-hover;
+			padding: 7px 0;
+		}
+		.fab {
+			font-size: 2rem;
+			margin-right: 1rem;
+		}
+	}//.social-links
+
+
+	h3 {
+		color: #fff;
+		letter-spacing: 1.2px;
+		margin-bottom: .5rem;
+		text-transform: uppercase;
+	}
+
+	.email {
+		text-decoration: underline;
+		&:hover {text-decoration: none;}
+	}
+
+
+
+
+	.form {
+		text-align: center;
+		width: 100%;
+		p {
+			color: rgba(255,255,255,.6);
+			font-size: 1.6rem;
+			line-height: 1.9rem;
+			margin-bottom: 2rem;
+			text-align: left;
+		}
+		&-group {
+			margin-bottom: .5rem;
+		}
+		//.form-group
+
+		&-label {
+			display: block;
+			font-size: 1.4rem;
+			padding-left: 2rem;
+			transition: $default-transition;
+			width: 100%;
+			@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { //IE10, IE11
+				visibility: hidden;
+			}
+			@supports (display:-ms-grid) { //MICROSOFT EDGE
+				visibility: hidden;
+			}
+		}//.form-label
+
+		&-input {
+			background: none;
+			border: 1px solid rgba(255,255,255,.3);
+			color: #fff;
+			padding: .5rem 2rem;
+			width: 100%;
+			@include placeholder {
+				color: rgba(255,255,255,0.5);
+			}
+			&:placeholder-shown + .form-label {
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(-4rem);
+			}
+		}
+		//.form-input
+
+		select {
+			margin-bottom: 3rem;
+			option {color: #000;}
+		}
+		.btn {width: 20rem;}
+	}//.form
+
+	.menu-widget {
+		position: absolute;
+		left: 0;
+		@media screen and (max-width: 768px) {
+			position: static;
+		}
+	}
+	.form-widget {
+		margin: auto;
+		@media screen and (max-width: 768px) {
+			margin: 0;
+		}
+	}
+
+	.mettr {
+		max-width: 29.1666%;
+		position: absolute;
+		right: 0;
+		@media screen and (max-width: 1023px) {
+			display: none;
+		}
+	}
+
+
 	.footer-lower {
 		align-items: center;
 		color: rgba(255,255,255,.6);
@@ -11,6 +149,8 @@ footer{
 		height: $footerHeight;
 		font-size: 1.2rem;
 		line-height: 1.5rem;
+		margin-top: 1.5rem;
+		text-align: center;
 		a {
 			padding: 0 5px;
 			&:hover {

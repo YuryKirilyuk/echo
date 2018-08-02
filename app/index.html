@@ -8,6 +8,7 @@
 	<meta name='description' content="" />
 	<meta name="keywords" content="" />
 	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />	
 </head>
 <body class="loaded">
@@ -232,7 +233,7 @@
 	
 	<footer>
 		<div class="wrapper">
-			<div class="footer-widget">
+			<div class="footer-widget menu-widget">
 				<nav class="footer-menu">
 					<ul>
 						<li><a href="#home">Home</a></li>
@@ -242,24 +243,52 @@
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
+				<div class="social-links">
+					<div class="social-links-title">Follow Us</div>
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+						<li><a href="#"><i class="fab fa-twitter-square"></i>Twitter</a></li>
+					</ul>
+				</div>
 			</div><!-- //.footer-widget -->
 
-			<div class="footer-widget">
-				get in touch
-				<form>
+			<div class="footer-widget form-widget">
+				<h3>get in touch</h3>
+				<p>Telephone: +1 (650) 465-3357</p>
+				<p>Email: <a class="email" href="mailto:razorblade@gmail.com">razorblade@gmail.com</a> </p>
+				<h3 class="mt20">OR REQUEST A CALLBACK</h3>
+				<form class="form">
+					<p>Enter your details so we can call you back</p>
+					<div class="form-group">
+						<input id="name" class="form-input" type="text" placeholder="Name" />
+						<label class="form-label" for="name">Name</label>
+					</div>
+					<div class="form-group">
+						<input id="phone" class="form-input" type="number" placeholder="Telephone" />
+						<label class="form-label" for="phone">Telephone</label>
+					</div>
+					<div class="form-group">
+						<select class="form-input">
+							<option hidden>What can we help you with?</option>
+							<option>Help me with this</option>
+							<option>Help me with that</option>
+						</select>
+					</div>
 					<button class="btn btn-border">SUBMIT</button>
 				</form>
 
 			</div><!-- //.footer-widget -->
 
-			<div class="footer-widget">
-
-				METTR
+			<div class="footer-widget mettr">
+				<img alt="" src="img/widget.jpg"/>
 			</div><!-- //.footer-widget -->
-			<div class="footer-lower">
-				Copyright © 2018 Contempo Theme Test | <a href="#">Privacy Policy</a> | <a href="#">Conditions of use</a> | Website built by <a href="#">Mettrr</a>
-			</div>
-		</div>	
+		</div>
+
+		<div class="footer-lower">
+			<p>Copyright © 2018 Contempo Theme Test | <a href="#">Privacy Policy</a> | <a href="#">Conditions of use</a> | Website built by <a href="#">Mettrr</a></p>
+		</div>
+
 	</footer>
 	
 <!-- FOOTER EOF   -->

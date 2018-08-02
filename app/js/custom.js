@@ -18,7 +18,7 @@ $(function(){
 
     if($('.fancybox').length) {
         $('.fancybox').fancybox({
-            margin  : 10,
+            margin  : 20,
             padding  : 10
         });
     };
