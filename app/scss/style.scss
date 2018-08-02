@@ -5,7 +5,7 @@
 @import "base/fonts";
 
 //@import "vendor/jquery.formstyler";
-//@import "vendor/fancybox";
+@import "vendor/fancybox";
 //@import "vendor/slick";
 //@import "vendor/mCustomScrollbar";
 
@@ -19,3 +19,11 @@
 @import "partials/header";
 @import "partials/footer";
 @import "partials/menu";
+@import "partials/hero-section";
+@import "partials/mission-section";
+@import "partials/service-section";
+@import "partials/gallery-section";
+@import "partials/review-section";
+@import "partials/brand-section";
+@import "partials/contact-section";
+@import "partials/payment-section";

@@ -1,0 +1,29 @@
+.hero-section {
+  max-height: 480px;
+  padding: 0;
+  position: relative;
+  .hero-image {
+    max-height: 100%;
+    position: relative;
+    &:after {
+      background: linear-gradient(180deg, rgba(28,110,92,0) 0%, $green 100%);
+      content: '';
+      height: 52%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  .main-title {
+    bottom: 16.6666%;
+    color: #fff;
+    left: 0;
+    letter-spacing: 1.8px;
+    margin: auto;
+    max-width: 81.5rem;
+    padding: 0;
+    right: 0;
+    position: absolute;
+  }
+}//.hero-section

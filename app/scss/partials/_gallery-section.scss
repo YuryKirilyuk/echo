@@ -1,0 +1,33 @@
+.gallery-section {
+  padding-bottom: 8rem;
+  .section-header {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .gallery-item {
+    height: 34rem;
+    margin-bottom: 2rem;
+    transition: $default-transition;
+    width: 34rem;
+    .fancybox {
+      display: block;
+      height: 100%;
+      img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+    &:hover {
+      //transform: scale(1.1);
+      opacity: .9;
+    }
+  }//.gallery-item
+
+}//.gallery-section

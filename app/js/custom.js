@@ -4,11 +4,11 @@ $(window).on('load', function () {
 	} else{
 		$('body').addClass('web');
 	};
-	$('body').removeClass('loaded'); 
+	$('body').removeClass('loaded');
 });
 /* viewport width */
 function viewport(){
-	var e = window, 
+	var e = window,
 		a = 'inner';
 	if ( !( 'innerWidth' in window ) )
 	{
@@ -47,17 +47,18 @@ $(function(){
 	});
 	
 	/* components */
-	
+
+    if($('.fancybox').length) {
+        $('.fancybox').fancybox({
+            margin  : 10,
+            padding  : 10
+        });
+    };
+
 	/*
 	
 	if($('.styled').length) {
 		$('.styled').styler();
-	};
-	if($('.fancybox').length) {
-		$('.fancybox').fancybox({
-			margin  : 10,
-			padding  : 10
-		});
 	};
 	if($('.slick-slider').length) {
 		$('.slick-slider').slick({
@@ -101,19 +102,19 @@ $(function(){
 });
 
 var handler = function(){
-	
-	var height_footer = $('footer').height();	
-	var height_header = $('header').height();		
+
+	var height_footer = $('footer').height();
+	var height_header = $('header').height();
 	//$('.content').css({'padding-bottom':height_footer+40, 'padding-top':height_header+40});
-	
-	
+
+
 	var viewport_wid = viewport().width;
 	var viewport_height = viewport().height;
-	
+
 	if (viewport_wid <= 991) {
-		
+
 	}
-	
+
 }
 $(window).bind('load', handler);
 $(window).bind('resize', handler);

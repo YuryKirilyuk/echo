@@ -1,0 +1,16 @@
+.brand-section {
+  padding: 8rem 0 0;
+  .wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: 475px) {
+      flex-direction: column;
+    }
+  }
+  .brand-item {
+    max-width: 25rem;
+    margin-bottom: 2rem;
+    &.item2 {max-width: 20rem;}
+  }
+}
